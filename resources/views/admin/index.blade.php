@@ -4,7 +4,7 @@
 @section('subtitle', 'نمای کلی وضعیت سایت')
 
 @section('actions')
-    <a href="{{ route('admin.article') }}" class="text-sm px-4 py-2 rounded-xl bg-dark-900 text-white hover:bg-dark-800">+ مقاله جدید</a>
+    <a href="{{ route('admin.article.create') }}" class="text-sm px-4 py-2 rounded-xl bg-dark-900 text-white hover:bg-dark-800">+ مقاله جدید</a>
 @endsection
 
 @section('content')
@@ -41,7 +41,7 @@
         <div class="lg:col-span-2 bg-white rounded-2xl border shadow-sm p-5">
             <div class="flex items-center justify-between mb-4">
                 <h3 class="font-bold">آخرین مقالات</h3>
-                <a href="{{ route('admin.article') }}" class="text-xs text-brand-600 font-medium">مشاهده همه</a>
+                <a href="{{ route('admin.article.index') }}" class="text-xs text-brand-600 font-medium">مشاهده همه</a>
             </div>
             <div class="space-y-3 text-sm">
                 <div class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50 border border-transparent hover:border-slate-100 transition">

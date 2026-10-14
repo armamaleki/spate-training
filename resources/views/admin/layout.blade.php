@@ -48,7 +48,7 @@
             <a href="{{ route('admin.role') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.role') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
                 <span>⬣</span> نقش‌ها
             </a>
-            <a href="{{ route('admin.article') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.article') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
+            <a href="{{ route('admin.article.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.article') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
                 <span>✎</span> مقالات
             </a>
 
@@ -77,7 +77,7 @@
         <a href="{{ route('admin.index') }}">داشبورد</a>
         <a href="{{ route('admin.users') }}">کاربران</a>
         <a href="{{ route('admin.role') }}">نقش‌ها</a>
-        <a href="{{ route('admin.article') }}">مقالات</a>
+        <a href="{{ route('admin.article.index') }}">مقالات</a>
     </div>
 
     <!-- Main -->

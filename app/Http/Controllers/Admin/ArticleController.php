@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Article;
+use App\Http\Models\Article;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller

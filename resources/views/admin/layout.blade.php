@@ -56,9 +56,12 @@
             <a href="/" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-300 hover:bg-white/10">
                 <span>◎</span> مشاهده سایت
             </a>
-            <a href="{{ route('login') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl text-red-300 hover:bg-red-500/10">
-                <span>⎋</span> خروج
-            </a>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-300 hover:bg-red-500/10 text-sm">
+                    <span>⎋</span> خروج
+                </button>
+            </form>
         </nav>
 
         <div class="p-4 border-t border-white/10">

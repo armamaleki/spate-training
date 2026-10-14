@@ -18,7 +18,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/role', fn() => view('admin.role'))->name('role');
 
 
-    Route::prefix('/')->name('article.')->middleware('auth')->group(function(){
+    Route::prefix('/')->name('article.')->group(function(){
         Route::get('/article', [ArticleController::class, 'index'])->name('index');
         Route::get('/article/create', [ArticleController::class, 'create'])->name('create');
         Route::post('/article', [ArticleController::class, 'store'])->name('store');
@@ -27,5 +27,8 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
         Route::delete('/article/{article}', [ArticleController::class, 'destroy'])->name('destroy');
     });
 
+    Route::prefix('/')->group(function(){
+        Route::resource('users', \App\Http\Controllers\Admin\UserController::class)->except(['show']);
+    });
 
 });

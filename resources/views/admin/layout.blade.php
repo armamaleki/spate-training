@@ -42,13 +42,13 @@
             <a href="{{ route('admin.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.index') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
                 <span>◉</span> داشبورد
             </a>
-            <a href="{{ route('admin.users') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.users') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
+            <a href="{{ route('admin.users.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.users.index') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
                 <span>◍</span> کاربران
             </a>
             <a href="{{ route('admin.role') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.role') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
                 <span>⬣</span> نقش‌ها
             </a>
-            <a href="{{ route('admin.article.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.article') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
+            <a href="{{ route('admin.article.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.article.index') ? 'bg-brand-600 text-white' : 'text-slate-300 hover:bg-white/10' }}">
                 <span>✎</span> مقالات
             </a>
 
@@ -75,7 +75,7 @@
     <!-- Mobile sidebar simplified -->
     <div class="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-dark-900 text-white flex justify-around py-3 text-xs border-t border-white/10">
         <a href="{{ route('admin.index') }}">داشبورد</a>
-        <a href="{{ route('admin.users') }}">کاربران</a>
+        <a href="{{ route('admin.users.index') }}">کاربران</a>
         <a href="{{ route('admin.role') }}">نقش‌ها</a>
         <a href="{{ route('admin.article.index') }}">مقالات</a>
     </div>
